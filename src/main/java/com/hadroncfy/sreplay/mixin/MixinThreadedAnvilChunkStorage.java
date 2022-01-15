@@ -21,13 +21,6 @@ public abstract class MixinThreadedAnvilChunkStorage {
     @Shadow
     private static int getChebyshevDistance(ChunkPos pos, ServerPlayerEntity player, boolean useCameraPosition){ return 0; }
 
-    @Redirect(method = "method_18707", at = @At(
-        value = "FIELD",
-        target = "Lnet/minecraft/server/world/ThreadedAnvilChunkStorage;watchDistance:I"
-    ))
-    private int getWatchDistance$lambda0$getPlayersWatchingChunk(ThreadedAnvilChunkStorage cela, ChunkPos pos, boolean bl, ServerPlayerEntity player){
-        return getRealViewDistance(player, watchDistance);
-    }
 
     @Redirect(method = "method_17219", at = @At(
         value = "FIELD",
