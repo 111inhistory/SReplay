@@ -8,7 +8,6 @@
     "MixinMinecraftServer",
     "PlayerSpawnS2CPacketAccessor",
     "PlayerManagerAccessor",
-    "MixinThreadedAnvilChunkStorage",
     "ThreadedAnvilChunkStorageAccessor",
     "MixinEntityTracker",
     "WorldTimeUpdateS2CPacketAccessor",
